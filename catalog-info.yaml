@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage
+  description: Demo for Backstage.io
+  tags: 
+    - backstage
+    - poc
+    - demo
+    - concept
+    - demonstration
+  labels: 
+    codeCoverage: "80"
+    codeSmell: "10"
+  annotations:
+    grafana/tag-selector: "Backstage"
+    sonarqube.org/project-key: default/backstage.io-poc
+spec:
+  type: service
+  lifecycle: experimental
+  owner: Dremi Squad
